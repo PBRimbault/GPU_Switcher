@@ -1,5 +1,5 @@
 # GPU_Switcher
-A set of Powershell scripts that enable or disable my Nvidia Laptop GPU depending on whether or not AC Power is connected to a laptop in Windows 11.
+A simple Powershell script that enables or disables my Laptop GPU depending on whether or not AC Power is connected to a laptop in Windows 11.
 
 # The problem
 
@@ -47,4 +47,7 @@ This was a fairly simple task, using similar logic to the event tracker. Followi
 
 # Conclusion
 
-Now my laptop runs efficiently on battery and goes into power mode when I'm plugged into AC Power.
+Now my laptop runs efficiently on battery and goes into power mode when I'm plugged into AC Power. A further tweak to the tasks was to run them with 'SYSTEM' priveldges. This prevented the Powershell window from opening, as disucssed [here](https://stackoverflow.com/questions/6568736/how-do-i-set-a-windows-scheduled-task-to-run-in-the-background/6568823#6568823). I would suggest only changing this setting once you've tested the script and have your use cases running properly, otherwise you will not have a visual check on what happens when you plug/unplug AC Power
+
+![image](https://github.com/user-attachments/assets/d9bf9128-5339-4c89-b1dc-1d77e64783c7)
+
